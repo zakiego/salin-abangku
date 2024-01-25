@@ -63,12 +63,6 @@ export default function PageClient() {
 						color="gray"
 						style={{
 							cursor: "pointer",
-							// hover
-							transition: "all 0.2s ease",
-							"&:hover": {
-								transform: "scale(1.02)",
-								boxShadow: "0 0 0 1px rgba(0,0,0,0.1)",
-							},
 						}}
 					>
 						<Flex justify="space-between">
