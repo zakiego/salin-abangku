@@ -26,5 +26,7 @@ export const templates: string[] = [
   "jangan kasi longgar king 🔝💯🔥🙌🏼",
   "eitsss pondasi bangsa abangkuuhh 🔥🔝🙌🏼",
   "mahkota sedang transit di dc cakung kingg 🔥👑🙇‍♂️",
-  "terstill💪💪"
+  "terstill💪💪",
+  "🔛🔝 selalu idola 🔥",
+  "tipis tipis asal menyala king 👑🔥"
 ];
