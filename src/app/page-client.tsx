@@ -16,8 +16,6 @@ import {
 import { useClipboard } from "@mantine/hooks";
 import { Toaster, toast } from "sonner";
 import { FiClipboard } from "react-icons/fi";
-import { templates } from "@/lib/template";
-import { Header } from "@/app/@components/header";
 
 const successToast = [
 	"Tercopy abangkuuuhh 🔥🔥",
@@ -27,7 +25,11 @@ const successToast = [
 	"Tercopy, top abangkuu 🔥🔥💯🔝",
 ];
 
-export default function PageClient() {
+export default function PageClient({
+	templates,
+}: {
+	templates: string[];
+}) {
 	const clipboard = useClipboard({ timeout: 500 });
 
 	const copied = () => {
