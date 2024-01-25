@@ -1,6 +1,8 @@
 import PageClient from "@/app/page-client";
 import { templates } from "@/lib/template";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
 	const shuffleTemplates = shuffle(templates);
 
