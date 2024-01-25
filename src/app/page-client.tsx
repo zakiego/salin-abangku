@@ -37,7 +37,7 @@ export default function PageClient() {
 	};
 
 	return (
-		<Container py="lg" size="xs">
+		<Container pt="lg" pb="5rem" size="xs">
 			<Toaster richColors position="top-center" />
 			<Title
 				size="h2"
