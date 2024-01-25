@@ -4,4 +4,4 @@
 
 Sikatt captt 🔥🔝💥
 
-List: [template.ts](./src/lib/template.ts)
+List kata-kata ada di [template.ts](./src/lib/template.ts) boskuh 🤙🏻
