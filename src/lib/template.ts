@@ -1,5 +1,5 @@
 export const templates: string[] = [
-  "tipis tipis",
+  "tipis tipis 🔥🔛🔝",
   "sesekali 🙌🏼",
   "kelas abangkuu 🔥🔝",
   "izin abangkuu 🔥",
