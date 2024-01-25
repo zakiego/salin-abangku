@@ -8,7 +8,7 @@ export const templates: string[] = [
   "rispeekk 👍🏼🙌🏼",
   "manyala ilmu padi 🌾🔥",
   "kelas boskuuuh 🔥👍🏼",
-  "kalau diatas jgn lupa merunduk",
+  "kalau diatas jgn lupa merunduk 🌾🙌🏼🙇‍♂️",
   "tetep ilmu padi 🌾🌾",
   "kasih paham tipis tipis 🤝🏼",
   "top abangku 👍🏼👍🏼",
@@ -25,4 +25,5 @@ export const templates: string[] = [
   "lanjutkan abangkuuhh 🔥🔝💥",
   "jangan kasi longgar king 🔝💯🔥🙌🏼",
   "eitsss pondasi bangsa abangkuuhh 🔥🔝🙌🏼",
+  "mahkota sedang transit di dc cakung kingg 🔥👑🙇‍♂️",
 ];
