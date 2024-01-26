@@ -24,6 +24,7 @@ const successToastID = [
 	"Tersalin, top kapten 👍🏼👍🏼",
 	"Berhasil tercopy 🙌🏼🙌🏼",
 	"Tercopy, top abangkuu 🔥🔥💯🔝",
+	"Kelas abangda 🔥🫡",
 ];
 
 const successToastEN = [
@@ -32,6 +33,7 @@ const successToastEN = [
 	"Copied, top captain 👍🏼👍🏼",
 	"Successfully copied 🙌🏼🙌🏼",
 	"Copied, courtesy of my brother 🔥🔥💯🔝",
+	"Brother class 🔥🫡",
 ];
 
 const renderIndonesianFlag = (
