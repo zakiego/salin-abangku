@@ -50,6 +50,7 @@ export const templates: string[] = [
   "kasih apa? kasih paham abangkuhh👊👊👊🔥🔥🔥🔥",
   "kasih paham queen, ilmu baddie 🔥🔥💅💅",
   "kasih paham queen 🤭🔥 MENYALA",
+  "kasih tebal king 🤙🤙",
 ];
 
 export const templatesEn: string[] = [
