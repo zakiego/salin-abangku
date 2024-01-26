@@ -23,7 +23,7 @@ const successToast = [
 	"Tersalin, top kapten 👍🏼👍🏼",
 	"Berhasil tercopy 🙌🏼🙌🏼",
 	"Tercopy, top abangkuu 🔥🔥💯🔝",
-	"brother class 🔥🫡",
+	"Brother class 🔥🫡",
 ];
 
 export default function PageClient({ templates }: { templates: string[] }) {
