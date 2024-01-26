@@ -28,5 +28,17 @@ export const templates: string[] = [
   "mahkota sedang transit di dc cakung kingg 🔥👑🙇‍♂️",
   "terstill💪💪",
   "🔛🔝 selalu idola 🔥",
-  "tipis tipis asal menyala king 👑🔥"
+  "tipis tipis asal menyala king 👑🔥",
+  "trcium aroma ilmu padi abangkuh🔥🔥🌾🌾",
+  "starboy vibez🥵😎🥀💥🐙",
+  "kasih jedag jedug dulu abangkuh🤩🥵",
+  "percaya proses king 💯💯💪❤‍🔥",
+  "makasih sharingnya abangkuhh, tetaplah ilmu padi 🌾🙇‍♂️🌾🔝🔝🔝",
+  "wanita mana yang berani menyakitimu king 💯💯💪❤‍🔥",
+  "meroket abangku 🚀🚀🚀",
+  "percaya proses capt 🔥🔥",
+  "gaskandia 🔥🔥",
+  "kasih keras abangkuhh 🔥👊🏼",
+  "ini mahkotamu king 👑",
+  "weees kelas abangku 🔥🔥" 
 ];
