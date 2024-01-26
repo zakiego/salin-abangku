@@ -44,6 +44,10 @@ export const templates: string[] = [
   "meroket abangku 🚀🚀🚀",
   "starboy vibez🥵😎🥀💥🐙",
   "gas kanda 🔥🔥",
+  "still rice science 🌾",
+  "Don't give it slack sir 🔥🔥",
+  "dispensaries closed capt 😘😘",
+  "eitsss foundation of the nation abangkuuhh 🔥🔝🙌🏼"
 ];
 
 export const templatesEn: string[] = [];
