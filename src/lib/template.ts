@@ -41,4 +41,11 @@ export const templates: string[] = [
   "kasih keras abangkuhh 🔥👊🏼",
   "ini mahkotamu king 👑",
   "weees kelas abangku 🔥🔥" 
+  "top selalu idola 🔥",
+  "kasih keras idola 🔥🔥",
+  "gaskandia 🔥🔥",
+  "gas kanda 🔥🔥",
+  "tetap membumi abangkuh 🔥🙌🏼🌎",
+  "gaskandia 🔥🔥",
+  "kasih keras abangkuhh 🔥👊🏼"
 ];
