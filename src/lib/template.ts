@@ -36,5 +36,10 @@ export const templates: string[] = [
   "makasih sharingnya abangkuhh, tetaplah ilmu padi 🌾🙇‍♂️🌾🔝🔝🔝",
   "wanita mana yang berani menyakitimu king 💯💯💪❤‍🔥",
   "meroket abangku 🚀🚀🚀",
-  "percaya proses capt 🔥🔥"
+  "percaya proses capt 🔥🔥",
+  "top selalu idola 🔥",
+  "kasih keras idola 🔥🔥",
+  "gaskandia 🔥🔥",
+  "gas kanda 🔥🔥",
+  "tetap membumi abangkuh 🔥🙌🏼🌎",
 ];
