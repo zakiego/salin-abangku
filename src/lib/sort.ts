@@ -10,6 +10,11 @@ export const sort = (array: string[]): string[] => {
   });
 };
 
-const result = sort(templates);
+// shuffling array
+export const shuffle = (array: string[]): string[] => {
+  return array.sort(() => Math.random() - 0.5);
+};
+
+const result = shuffle(templates);
 
 console.log(result);
