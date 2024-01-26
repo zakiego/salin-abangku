@@ -44,6 +44,12 @@ export const templates: string[] = [
   "meroket abangku 🚀🚀🚀",
   "starboy vibez🥵😎🥀💥🐙",
   "gas kanda 🔥🔥",
+  "isinya daging semua abangkuu🔥🔥🔛🔝",
+  "jagoan mama muncul 🔥🔥🔥",
+  "beraksi🍻🍻",
+  "kasih apa? kasih paham abangkuhh👊👊👊🔥🔥🔥🔥",
+  "kasih paham queen, ilmu baddie 🔥🔥💅💅",
+  "kasih paham queen 🤭🔥 MENYALA",
 ];
 
 export const templatesEn: string[] = [
