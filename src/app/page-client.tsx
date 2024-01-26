@@ -1,35 +1,81 @@
 "use client";
 
 import {
+	ActionIcon,
+	Box,
+	Button,
+	Container,
+	Flex,
+	Paper,
 	Stack,
 	Text,
-	Container,
-	Divider,
-	Box,
-	Paper,
-	ActionIcon,
-	Flex,
-	Button,
-	Tooltip,
 	Title,
+	Tooltip,
+	Switch,
 } from "@mantine/core";
 import { useClipboard } from "@mantine/hooks";
-import { Toaster, toast } from "sonner";
+import { useState } from "react";
 import { FiClipboard } from "react-icons/fi";
+import { Toaster, toast } from "sonner";
 
-const successToast = [
+const successToastID = [
 	"Tercopy abangkuuuhh 🔥🔥",
 	"Sudah tercopy abangda 🤝🏼",
 	"Tersalin, top kapten 👍🏼👍🏼",
 	"Berhasil tercopy 🙌🏼🙌🏼",
 	"Tercopy, top abangkuu 🔥🔥💯🔝",
+	"Kelas abangda 🔥🫡",
+];
+
+const successToastEN = [
+	"Copied my brother 🔥🔥",
+	"It's been copied, brother 🤝🏼",
+	"Copied, top captain 👍🏼👍🏼",
+	"Successfully copied 🙌🏼🙌🏼",
+	"Copied, courtesy of my brother 🔥🔥💯🔝",
 	"Brother class 🔥🫡",
 ];
 
-export default function PageClient({ templates }: { templates: string[] }) {
+const renderIndonesianFlag = (
+	<div
+		style={{
+			fontSize: "1rem",
+		}}
+	>
+		🇮🇩
+	</div>
+);
+
+const renderBritishFlag = (
+	<div
+		style={{
+			fontSize: "1rem",
+		}}
+	>
+		🇬🇧
+	</div>
+);
+
+type TPageClientProps = {
+	templatesID: string[];
+	templatesEN: string[];
+};
+
+export default function PageClient({
+	templatesID,
+	templatesEN,
+}: TPageClientProps) {
 	const clipboard = useClipboard({ timeout: 500 });
+	const [checked, setChecked] = useState<"ID" | "EN">("ID");
+	const isIndonesian = checked === "ID";
+
+	const templates = () => {
+		const template = isIndonesian ? templatesID : templatesEN;
+		return template;
+	};
 
 	const copied = () => {
+		const successToast = isIndonesian ? successToastID : successToastEN;
 		toast.success(
 			successToast[Math.floor(Math.random() * successToast.length)],
 		);
@@ -47,8 +93,35 @@ export default function PageClient({ templates }: { templates: string[] }) {
 				Salin Abangkuuuhh 🫡🔥🔝
 			</Title>
 
+			<Flex
+				p="md"
+				gap="sm"
+				justify="center"
+				align="center"
+				direction="column"
+				wrap="wrap"
+			>
+				<Title
+					size="h5"
+					style={{
+						textAlign: "center",
+					}}
+				>
+					Pilih Bahasa Template 🌾🙌🏼🙇‍♂️
+				</Title>
+				<Switch
+					checked={isIndonesian}
+					onChange={(event) =>
+						event.currentTarget.checked ? setChecked("ID") : setChecked("EN")
+					}
+					size="md"
+					onLabel={renderIndonesianFlag}
+					offLabel={renderBritishFlag}
+				/>
+			</Flex>
+
 			<Stack pt="lg">
-				{templates.map((i) => (
+				{templates().map((i) => (
 					<Paper
 						key={i}
 						shadow="xs"
@@ -94,7 +167,7 @@ export default function PageClient({ templates }: { templates: string[] }) {
 			>
 				<Button
 					onClick={() => {
-						clipboard.copy(templates.join("\n"));
+						clipboard.copy(templates().join("\n"));
 						copied();
 					}}
 					radius="md"
