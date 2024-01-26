@@ -34,5 +34,6 @@ export const templates: string[] = [
   "kasih jedag jedug dulu abangkuh🤩🥵",
   "percaya proses king 💯💯💪❤‍🔥",
   "makasih sharingnya abangkuhh, tetaplah ilmu padi 🌾🙇‍♂️🌾🔝🔝🔝",
-  "wanita mana yang berani menyakitimu king 💯💯💪❤‍🔥"
+  "wanita mana yang berani menyakitimu king 💯💯💪❤‍🔥",
+  "meroket abangku 🚀🚀🚀",
 ];
