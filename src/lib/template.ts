@@ -42,4 +42,6 @@ export const templates: string[] = [
   "gaskandia 🔥🔥",
   "gas kanda 🔥🔥",
   "tetap membumi abangkuh 🔥🙌🏼🌎",
+  "gaskandia 🔥🔥",
+  "kasih keras abangkuhh 🔥👊🏼"
 ];
