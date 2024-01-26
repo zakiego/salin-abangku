@@ -51,6 +51,7 @@ export const templates: string[] = [
   "kasih paham queen, ilmu baddie 🔥🔥💅💅",
   "kasih paham queen 🤭🔥 MENYALA",
   "manyala panutan abangda 🔥🔥",
+  "kasih tebal king 🤙🤙",
 ];
 
 export const templatesEn: string[] = [
