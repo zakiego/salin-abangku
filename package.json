@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sort": "bun run src/lib/sort.ts"
   },
   "dependencies": {
     "@mantine/core": "^7.4.2",
