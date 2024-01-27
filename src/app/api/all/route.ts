@@ -1,8 +1,14 @@
-import { templates } from "@/lib/template";
-import { NextResponse } from "next/server";
+import { templates, templatesEn } from "@/lib/template";
+import { NextRequest, NextResponse } from "next/server";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
+	const lang = request.nextUrl.searchParams.get("lang");
+
+	if (lang === "en") {
+		return NextResponse.json(templatesEn);
+	}
+
 	return NextResponse.json(templates);
 }
