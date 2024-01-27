@@ -55,8 +55,11 @@ export const templates: string[] = [
 	"kasih tahu abangkuuu🔥🔥🙇‍♂️🙇‍♂️",
 	"sungkem dulu abangkuuu🙇‍♂️🙇‍♂️",
 	"biarkan abangku memasakkk🔥🔥🧑‍🍳🧑‍🍳",
+	"kasi paham wakk 🔥🔥🔥",
+	"eihhh mantaapp pedii kaliii 🔥🔥🔥",
 	"bertahap abangkuuuu🔥🤙🪜👟",
-	"nikmati proses kakandaaa🤙🔥🙇‍♂️"
+	"nikmati proses kakandaaa🤙🔥🙇‍♂️",
+	"jangan kasih kendor king 🔥🔥🔥",
 ];
 
 export const templatesEn: string[] = [
