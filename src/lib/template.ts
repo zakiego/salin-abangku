@@ -67,6 +67,8 @@ export const templates: string[] = [
 
 export const templatesEn: string[] = [
 	"your crown is still welded, king",
+	"keep grinding boss 💪",
+	"U're the best bro 🙌🏼",
 	"thin thin origin light king 👑🔥",
 	"Thanks for sharing, brother, still rice science 🌾🙇‍♂️🌾🔝🔝🔝",
 	"keep going my brother 🔥🔝💥",
