@@ -6,7 +6,7 @@ Sikatt captt 🔥🔝💥
 
 List kata-kata ada di [template.ts](./src/lib/template.ts) boskuh 🤙🏻🤙🏻
 
-# API Link
+# API link
 
 https://salin-abangku.vercel.app/api/one
 
