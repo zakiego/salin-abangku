@@ -55,13 +55,11 @@ export const templates: string[] = [
 	"kasih tahu abangkuuu🔥🔥🙇‍♂️🙇‍♂️",
 	"sungkem dulu abangkuuu🙇‍♂️🙇‍♂️",
 	"biarkan abangku memasakkk🔥🔥🧑‍🍳🧑‍🍳",
-<<<<<<< HEAD
 	"kasi paham wakk 🔥🔥🔥",
 	"eihhh mantaapp pedii kaliii 🔥🔥🔥",
-=======
 	"bertahap abangkuuuu🔥🤙🪜👟",
-	"nikmati proses kakandaaa🤙🔥🙇‍♂️"
->>>>>>> 3fd1e3452936c4107a7e190a95c3626f13eb21ae
+	"nikmati proses kakandaaa🤙🔥🙇‍♂️",
+	"jangan kasih kendor king 🔥🔥🔥",
 ];
 
 export const templatesEn: string[] = [
@@ -112,13 +110,6 @@ export const templatesEn: string[] = [
 	"speeding kanda 🔥🔥",
 	"give tofu my brotherrr🔥🔥🙇‍♂️🙇‍♂️",
 	"let my brotherrr cook🔥🔥🧑‍🍳🧑‍🍳",
-<<<<<<< HEAD
-	"kacaww abangkuuuhh 🔥🔥🔥", 
-	"meledaakkk 🔥🔥🔥",
-	"kasi pahammm abangkuu 😱😱😱🔥🔥🔥",
-	""
-=======
 	"step by step my brotherrr🔥🤙🪜👟",
 	"enjoy the process my dear brotherrr🤙🔥🙇‍♂️"
->>>>>>> 3fd1e3452936c4107a7e190a95c3626f13eb21ae
 ];
