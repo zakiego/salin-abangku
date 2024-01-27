@@ -60,6 +60,7 @@ export const templates: string[] = [
 	"bertahap abangkuuuu🔥🤙🪜👟",
 	"nikmati proses kakandaaa🤙🔥🙇‍♂️",
 	"jangan kasih kendor king 🔥🔥🔥",
+	"gokil capt kaki tiga🦵🔥🔥"
 ];
 
 export const templatesEn: string[] = [
@@ -111,5 +112,6 @@ export const templatesEn: string[] = [
 	"give tofu my brotherrr🔥🔥🙇‍♂️🙇‍♂️",
 	"let my brotherrr cook🔥🔥🧑‍🍳🧑‍🍳",
 	"step by step my brotherrr🔥🤙🪜👟",
-	"enjoy the process my dear brotherrr🤙🔥🙇‍♂️"
+	"enjoy the process my dear brotherrr🤙🔥🙇‍♂️",
+	"splendid capt three legs🦵🔥🔥"
 ];
