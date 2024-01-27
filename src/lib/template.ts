@@ -1,4 +1,7 @@
 export const templates: string[] = [
+	"mahkotamu masih dilas, king 👑",
+	"giling terus boss 💪",
+	"terbaik kandaku 🙌🏼",
 	"tipis tipis asal menyala king 👑🔥",
 	"makasih sharingnya abangkuhh, tetaplah ilmu padi 🌾🙇‍♂️🌾🔝🔝🔝",
 	"lanjutkan abangkuuhh 🔥🔝💥",
@@ -64,6 +67,9 @@ export const templates: string[] = [
 ];
 
 export const templatesEn: string[] = [
+	"your crown is still welded, king",
+	"keep grinding boss 💪",
+	"U're the best bro 🙌🏼",
 	"thin thin origin light king 👑🔥",
 	"Thanks for sharing, brother, still rice science 🌾🙇‍♂️🌾🔝🔝🔝",
 	"keep going my brother 🔥🔝💥",
