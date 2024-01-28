@@ -76,9 +76,10 @@ export default function PageClient({
 
 	const copied = () => {
 		const successToast = isIndonesian ? successToastID : successToastEN;
-		toast.success(
-			successToast[Math.floor(Math.random() * successToast.length)],
-		);
+		const index = Math.floor(Math.random() * successToast.length);
+		const message = successToast[index];
+		toast.dismiss();
+		toast.success(message);
 	};
 
 	return (
