@@ -1,3 +1,4 @@
+import { corsHeaders } from "@/app/api/cors";
 import { templates } from "@/lib/template";
 import { NextResponse } from "next/server";
 
@@ -7,5 +8,7 @@ export async function GET(request: Request) {
 	const random = Math.floor(Math.random() * templates.length);
 	const template = templates[random];
 
-	return NextResponse.json(template);
+	return NextResponse.json(template, {
+		headers: corsHeaders,
+	});
 }
