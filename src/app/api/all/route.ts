@@ -1,3 +1,4 @@
+import { corsHeaders } from "@/app/api/cors";
 import { templates, templatesEn } from "@/lib/template";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -10,5 +11,7 @@ export async function GET(request: NextRequest) {
 		return NextResponse.json(templatesEn);
 	}
 
-	return NextResponse.json(templates);
+	return NextResponse.json(templates, {
+		headers: corsHeaders,
+	});
 }
