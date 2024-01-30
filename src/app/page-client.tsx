@@ -160,6 +160,11 @@ export default function PageClient({
 												color="gray"
 												size="sm"
 												aria-label="Copy"
+												onClick={(e) => {
+													e.stopPropagation();
+													clipboard.copy(i);
+													copied();
+												}}
 											>
 												<FiClipboard />
 											</ActionIcon>
