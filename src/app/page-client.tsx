@@ -12,10 +12,11 @@ import {
 	Title,
 	Tooltip,
 	Switch,
+	Textarea,
 } from "@mantine/core";
 import { useClipboard } from "@mantine/hooks";
 import { useState } from "react";
-import { FiClipboard } from "react-icons/fi";
+import { FiClipboard, FiPlus } from "react-icons/fi";
 import { Toaster, toast } from "sonner";
 
 const successToastID = [
@@ -68,6 +69,8 @@ export default function PageClient({
 	const clipboard = useClipboard({ timeout: 500 });
 	const [checked, setChecked] = useState<"ID" | "EN">("ID");
 	const isIndonesian = checked === "ID";
+	const [customText, setCustomText] = useState<string>("");
+	const [isCustom, setIsCustom] = useState<boolean>(false);
 
 	const templates = () => {
 		const template = isIndonesian ? templatesID : templatesEN;
@@ -83,7 +86,7 @@ export default function PageClient({
 	};
 
 	return (
-		<Container pt="lg" pb="5rem" size="xs">
+		<Container pt="lg" pb="5rem" size={isCustom ? "md" : "sm"}>
 			<Toaster richColors position="top-center" />
 			<Title
 				size="h2"
@@ -119,42 +122,98 @@ export default function PageClient({
 					onLabel={renderIndonesianFlag}
 					offLabel={renderBritishFlag}
 				/>
-			</Flex>
 
-			<Stack pt="lg">
-				{templates().map((i) => (
-					<Paper
-						key={i}
-						shadow="xs"
-						radius="md"
-						px="md"
-						py="md"
-						onClick={() => {
-							clipboard.copy(i);
-							copied();
-						}}
-						color="gray"
+				<Flex
+					direction={{
+						base: "column-reverse",
+						md: "row",
+					}}
+				>
+					<Stack pt="lg">
+						{templates().map((i) => (
+							<Paper
+								key={i}
+								shadow="xs"
+								radius="md"
+								px="md"
+								py="md"
+								onClick={() => {
+									if (isCustom) {
+										setCustomText(customText.concat(i, " "));
+									} else {
+										clipboard.copy(i);
+										copied();
+									}
+								}}
+								color="gray"
+								style={{
+									cursor: "pointer",
+								}}
+							>
+								<Flex justify="space-between">
+									<Text>{i}</Text>
+
+									<Flex gap="sm">
+										<Tooltip label="Salin">
+											<ActionIcon
+												variant="default"
+												color="gray"
+												size="sm"
+												aria-label="Copy"
+												onClick={(e) => {
+													e.stopPropagation();
+													clipboard.copy(i);
+													copied();
+												}}
+											>
+												<FiClipboard />
+											</ActionIcon>
+										</Tooltip>
+
+										<Tooltip
+											display={isCustom ? "inline-flex" : "none"}
+											label="Masukkan"
+											onClick={(e) => {
+												e.stopPropagation();
+												setCustomText(customText.concat(i, " "));
+											}}
+										>
+											<ActionIcon
+												display={isCustom ? "inline-flex" : "none"}
+												variant="default"
+												color="gray"
+												size="sm"
+												aria-label="Add"
+											>
+												<FiPlus />
+											</ActionIcon>
+										</Tooltip>
+									</Flex>
+								</Flex>
+							</Paper>
+						))}
+					</Stack>
+					<Container
+						hidden={!isCustom}
+						pos="sticky"
+						top={10}
 						style={{
-							cursor: "pointer",
+							alignSelf: "flex-start",
 						}}
 					>
-						<Flex justify="space-between">
-							<Text>{i}</Text>
-
-							<Tooltip label="Salin">
-								<ActionIcon
-									variant="default"
-									color="gray"
-									size="sm"
-									aria-label="Copy"
-								>
-									<FiClipboard />
-								</ActionIcon>
-							</Tooltip>
-						</Flex>
-					</Paper>
-				))}
-			</Stack>
+						<Textarea
+							placeholder="Racik kata-katamu disini king 🍳"
+							size="xl"
+							autosize
+							minRows={2}
+							cols={80}
+							maxRows={8}
+							value={customText}
+							onChange={(e) => setCustomText(e.target.value)}
+						/>
+					</Container>
+				</Flex>
+			</Flex>
 
 			<Box
 				mb="lg"
@@ -166,16 +225,44 @@ export default function PageClient({
 					textAlign: "center",
 				}}
 			>
-				<Button
-					onClick={() => {
-						clipboard.copy(templates().join("\n"));
-						copied();
+				<Flex
+					gap={{
+						base: "xs",
+						md: "md",
 					}}
-					radius="md"
-					color="teal.9"
+					justify="center"
+					align="center"
+					direction={{
+						base: "column",
+						sm: "row",
+					}}
 				>
-					Salin Semua 🤙🏻
-				</Button>
+					<Button
+						onClick={() => {
+							clipboard.copy(templates().join("\n"));
+							copied();
+						}}
+						radius="md"
+						color="teal.9"
+						style={{
+							maxWidth: "fit-content",
+						}}
+					>
+						Salin Semua 🤙🏻
+					</Button>
+					<Button
+						onClick={() => {
+							setIsCustom(!isCustom);
+						}}
+						radius="md"
+						color={isCustom ? "red.9" : "cyan.9"}
+						style={{
+							maxWidth: "fit-content",
+						}}
+					>
+						Mode Memasak: {isCustom ? "ON 🔥" : "OFF 🌾"}
+					</Button>
+				</Flex>
 			</Box>
 		</Container>
 	);
