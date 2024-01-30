@@ -1,4 +1,4 @@
-import { templates } from "@/lib/template";
+import { Template } from './template';
 
 // sort array of string by length and alphabet, start from shortest
 export const sort = (array: string[]): string[] => {
@@ -11,10 +11,10 @@ export const sort = (array: string[]): string[] => {
 };
 
 // shuffling array
-export const shuffle = (array: string[]): string[] => {
+export const shuffle = <T>(array: T[]): T[] => {
 	return array.sort(() => Math.random() - 0.5);
 };
 
-const result = shuffle(templates);
-
-console.log(result);
+export const replaceSubject = (template: Template, subject: string): string => {
+	return subject ? template.text.replace("_", subject) : template.text.replace("_", template.subject ?? "")
+}

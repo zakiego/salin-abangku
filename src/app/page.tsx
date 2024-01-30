@@ -1,13 +1,13 @@
 import PageClient from "@/app/page-client";
-import { shuffle } from "@/lib/sort";
-import { templates, templatesEn } from "@/lib/template";
+import { shuffle } from "@/lib/utils";
+import { templatesEn, templatesWithSubject } from "@/lib/template";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
 	return (
 		<PageClient
-			templatesID={shuffle(templates)}
+			templatesID={shuffle(templatesWithSubject)}
 			templatesEN={shuffle(templatesEn)}
 		/>
 	);
