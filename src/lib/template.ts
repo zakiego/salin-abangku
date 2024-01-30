@@ -66,7 +66,8 @@ export const templates: string[] = [
 	"gokil capt kaki tiga🦵🔥🔥",
 	"kijang 1, ganti 🦌",
 	"masih memantau 🔭🔭🔭",
-	"menyala abangkuhh 🔥🔥🔥"
+	"menyala abangkuhh 🔥🔥🔥",
+	"ilmu padi abangkuhh🌾🌾👊🏻💥🔥"
 ];
 
 export const templatesEn: string[] = [
@@ -125,5 +126,6 @@ export const templatesEn: string[] = [
 	"splendid capt three legs🦵🔥🔥",
 	"deer 1, change 🦌",
 	"still monitor 🔭🔭🔭",
-	"light up brother 🔥🔥🔥"
+	"light up brother 🔥🔥🔥",
+	"rice science brother 🌾🌾👊🏻💥🔥"
 ];
