@@ -1,5 +1,7 @@
 "use client";
 
+import { replaceSubject, shuffle } from "@/lib/utils";
+import { Template, templatesWithSubject } from "@/lib/template";
 import {
 	ActionIcon,
 	Box,
@@ -12,6 +14,7 @@ import {
 	Title,
 	Tooltip,
 	Switch,
+	TextInput,
 } from "@mantine/core";
 import { useClipboard } from "@mantine/hooks";
 import { useState } from "react";
@@ -57,7 +60,7 @@ const renderBritishFlag = (
 );
 
 type TPageClientProps = {
-	templatesID: string[];
+	templatesID: Template[];
 	templatesEN: string[];
 };
 
@@ -68,9 +71,11 @@ export default function PageClient({
 	const clipboard = useClipboard({ timeout: 500 });
 	const [checked, setChecked] = useState<"ID" | "EN">("ID");
 	const isIndonesian = checked === "ID";
+	const [subject, setSubject] = useState("");
 
 	const templates = () => {
-		const template = isIndonesian ? templatesID : templatesEN;
+		const template = isIndonesian ? templatesID.map(template => replaceSubject(template, subject)) : templatesEN;
+
 		return template;
 	};
 
@@ -118,6 +123,13 @@ export default function PageClient({
 					size="md"
 					onLabel={renderIndonesianFlag}
 					offLabel={renderBritishFlag}
+				/>
+				<TextInput
+					label={isIndonesian ? "Ganti Subjek" : "Change Subject"}
+					placeholder={isIndonesian ? "Masukkan subjek" : "Enter subject"}
+					w={250}
+					value={subject}
+					onChange={(event) => setSubject(event.currentTarget.value)}
 				/>
 			</Flex>
 
