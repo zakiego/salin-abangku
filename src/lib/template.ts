@@ -67,7 +67,8 @@ export const templates: string[] = [
 	"kijang 1, ganti 🦌",
 	"masih memantau 🔭🔭🔭",
 	"menyala abangkuhh 🔥🔥🔥",
-	"ilmu padi abangkuhh🌾🌾👊🏻💥🔥"
+	"ilmu padi abangkuhh🌾🌾👊🏻💥🔥",
+	"tetap ilmu oriza sativa 🌾"
 ];
 
 export const templatesEn: string[] = [
@@ -127,5 +128,6 @@ export const templatesEn: string[] = [
 	"deer 1, change 🦌",
 	"still monitor 🔭🔭🔭",
 	"light up brother 🔥🔥🔥",
-	"rice science brother 🌾🌾👊🏻💥🔥"
+	"rice science brother 🌾🌾👊🏻💥🔥",
+	"still the science of oriza sartiva 🌾"
 ];
