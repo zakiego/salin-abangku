@@ -10,29 +10,29 @@ import { ActionIcon } from "@mantine/core";
 import Image from "next/image";
 
 export function Header() {
-	return (
-		<header className={classes.header}>
-			<Container size="xs">
-				<div className={classes.inner}>
-					<Title
-						size="h4"
-						style={{
-							textAlign: "center",
-						}}
-					>
-						Salin Abangkuuuhh 🫡🔥🔝
-					</Title>
+  return (
+    <header className={classes.header}>
+      <Container size="xs">
+        <div className={classes.inner}>
+          <Title
+            size="h4"
+            style={{
+              textAlign: "center",
+            }}
+          >
+            Salin Abangkuuuhh 🫡🔥🔝
+          </Title>
 
-					<ActionIcon
-						variant="subtle"
-						color="gray"
-						component="a"
-						href="https://github.com/zakiego/salin-abangku"
-					>
-						<Image src="/github.svg" alt="GitHub" width={16} height={16} />
-					</ActionIcon>
-				</div>
-			</Container>
-		</header>
-	);
+          <ActionIcon
+            variant="subtle"
+            color="gray"
+            component="a"
+            href="https://github.com/zakiego/salin-abangku"
+          >
+            <Image src="/github.svg" alt="GitHub" width={16} height={16} />
+          </ActionIcon>
+        </div>
+      </Container>
+    </header>
+  );
 }

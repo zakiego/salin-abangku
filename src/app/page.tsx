@@ -5,10 +5,10 @@ import { templates, templatesEn } from "@/lib/template";
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-	return (
-		<PageClient
-			templatesID={shuffle(templates)}
-			templatesEN={shuffle(templatesEn)}
-		/>
-	);
+  return (
+    <PageClient
+      templatesID={shuffle(templates)}
+      templatesEN={shuffle(templatesEn)}
+    />
+  );
 }
