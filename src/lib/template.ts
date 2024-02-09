@@ -69,6 +69,9 @@ export const templates: string[] = [
   "menyala abangkuhh 🔥🔥🔥",
   "ilmu padi abangkuhh🌾🌾👊🏻💥🔥",
   "tetap ilmu oriza sativa 🌾",
+  "mantap kali bahh 🔥🔥",
+  "sehat selalu kaka panutan 💪💪🫡",
+  "bercahaya abangkuhh 🔥💡💡",
 ];
 
 export const templatesEn: string[] = [
@@ -130,4 +133,7 @@ export const templatesEn: string[] = [
   "light up brother 🔥🔥🔥",
   "rice science brother 🌾🌾👊🏻💥🔥",
   "still the science of oriza sartiva 🌾",
+  "great time bahh 🔥🔥",
+  "stay healthy role model brother 💪💪🫡",
+  "glowing my brotherrr 🔥💡💡",
 ];
