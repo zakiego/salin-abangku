@@ -63,6 +63,7 @@ export const templates: string[] = [
   "bertahap abangkuuuu🔥🤙🪜👟",
   "nikmati proses kakandaaa🤙🔥🙇‍♂️",
   "jangan kasih kendor king 🔥🔥🔥",
+  "goreng terus king🔥",
   "gokil capt kaki tiga🦵🔥🔥",
   "kijang 1, ganti 🦌",
   "masih memantau 🔭🔭🔭",
@@ -72,6 +73,7 @@ export const templates: string[] = [
   "mantap kali bahh 🔥🔥",
   "sehat selalu kaka panutan 💪💪🫡",
   "bercahaya abangkuhh 🔥💡💡",
+  "siapa yang membiarkanmu memasak king🔥",
 ];
 
 export const templatesEn: string[] = [
@@ -127,6 +129,7 @@ export const templatesEn: string[] = [
   "let my brotherrr cook🔥🔥🧑‍🍳🧑‍🍳",
   "step by step my brotherrr🔥🤙🪜👟",
   "enjoy the process my dear brotherrr🤙🔥🙇‍♂️",
+  "keep frying king🔥🔥🔥",
   "splendid capt three legs🦵🔥🔥",
   "deer 1, change 🦌",
   "still monitor 🔭🔭🔭",
@@ -136,4 +139,5 @@ export const templatesEn: string[] = [
   "great time bahh 🔥🔥",
   "stay healthy role model brother 💪💪🫡",
   "glowing my brotherrr 🔥💡💡",
+  "who let you cook king🔥"
 ];
